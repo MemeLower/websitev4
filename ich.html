@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ich - ICH | Marie P.</title>
+  <meta name="description" content="Persönliche Beschreibung der Künstlerin Marie P.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+      <nav class="nav">
+          <div class="nav-brand">
+              <a href="index.html">Marie P.</a>
+          </div>
+          <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+          <ul class="nav-menu" id="navMenu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="ich.html" class="active">ich</a></li>
+              <li><a href="selbst.html">selbst</a></li>
+              <li><a href="bei-mir.html">bei mir ...</a></li>
+              <li><a href="in-aus-mir.html">in/aus mir ...</a></li>
+              <li><a href="mit-mir.html">mit mir</a></li>
+              <li><a href="objektkunst.html">Objektkunst</a></li>
+              <li><a href="spray-art.html">Spray Art</a></li>
+              <li><a href="artenvielfalt.html">Artenvielfalt</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+      </nav>
+  </header>
+
+  <main>
+      <section class="page-header">
+          <div class="container">
+              <h1>ich</h1>
+          </div>
+      </section>
+
+      <section class="content">
+    <div class="container">
+        <div class="content-grid">
+            <div class="content-main">
+                <div class="text-section">
+                    <h3>Oberflächlich betrachtet könnte man mich so beschreiben:</h3>
+                    <p>kreativ, bunt, crazy, leicht chaotisch, ein Sonnenschein, optimistisch, lebenslustig, selten ruhig = kommunikativ ;-)</p>
+                </div>
+
+                <div class="text-section">
+                    <h3>Wer mich näher kennt, würde u.a. aber auch folgendes über mich sagen:</h3>
+                    <p>nachdenklich, sensibel, verletzlich, reflektiert, selten, aber doch auch einmal zornig</p>
+                </div>
+
+                <div class="text-section">
+                    <p>Nicht jeder kennt diese - unbestritten - sehr unterschiedlichen Seiten von mir, weil ich sie nicht immer bzw. durchaus selektiv zeige. Diese Webpages brechen insofern damit, da sie ganz mich selbst bzw. das Ergebnis davon zeigen. Denn künstlerisches Gestalten ist nicht nur eine Ausdrucksmöglichkeit seiner Kreativität sondern auch ein Mittel, sich besser kennen zu lernen und neu zu erfahren. Ob man will, oder nicht, das Unterbewusstsein gestaltet immer mit. Man(n)/Frau gibt daher automatisch auch Persönliches preis.</p>
+                </div>
+            </div>
+            <div class="content-sidebar">
+                <img src="mpichl29/ole.jpg" alt="Marie P." class="profile-image">
+            </div>
+        </div>
+
+        <div class="quote-section">
+            <div class="quote-grid">
+                <div>
+                    <img src="mpichl29/ICH-Abendstimmung.jpg" alt="Abendstimmung" style="width: 100%; max-width: 300px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);">
+                </div>
+                <div>
+                    <blockquote>
+                        "Wer nach außen schaut, träumt. Wer nach innen sieht, erwacht."
+                        <cite>— Carl Gustav Jung, schweizer Psychiater</cite>
+                    </blockquote>
+
+                    <div class="artwork-info">
+                        <h4>Bild: Abendstimmung</h4>
+                        <p>2012 - 20x25 oval (Acryl & permanent Universalstift auf Malmappe)</p>
+                    </div>
+
+                    <blockquote style="margin-top: 2rem;">
+                        "Nur wer sich ändert, bleibt sich treu."
+                        <cite>— Wolf Biermann, deutscher Liedermacher und Lyriker</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  </main>
+
+  <footer class="footer">
+      <div class="container">
+          <div class="footer-grid">
+              <div class="footer-section">
+                  <h3>Marie P.</h3>
+                  <p>Amateurkünstlerin aus Wien. Spezialisiert auf Acrylmalerei, Objektkunst, Spray Art und experimentelle Techniken.</p>
+              </div>
+              
+              <div class="footer-section">
+                  <h4>Navigation</h4>
+                  <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="ich.html">Über mich</a></li>
+                      <li><a href="bei-mir.html">Werke</a></li>
+                      <li><a href="objektkunst.html">Objektkunst</a></li>
+                      <li><a href="spray-art.html">Spray Art</a></li>
+                      <li><a href="kontakt.html">Kontakt</a></li>
+                  </ul>
+              </div>
+              
+              <div class="footer-section">
+                  <h4>Kontakt</h4>
+                  <p>📧 marie-p@aon.at</p>
+                  <p>Bei Interesse an einem der Werke oder Wunsch nach Detailfotos bitte um direkte Kontaktaufnahme.</p>
+              </div>
+          </div>
+          
+          <div class="footer-bottom">
+              <p>&copy; 2024 Marie P. Alle Rechte vorbehalten.</p>
+              <a href="impressum.html">Impressum</a>
+          </div>
+      </div>
+  </footer>
+
+  <script>
+function toggleMenu() {
+  const navMenu = document.getElementById('navMenu');
+  if (navMenu) {
+      navMenu.classList.toggle('active');
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const navLinks = document.querySelectorAll('.nav-menu a');
+  navLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+          const navMenu = document.getElementById('navMenu');
+          if (navMenu && navMenu.classList.contains('active')) {
+              navMenu.classList.remove('active');
+          }
+      });
+  });
+});
+</script>
+</body>
+</html>
